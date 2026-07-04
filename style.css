@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #080d0d;
+  color: #f4ffff;
+}
+
+.app {
+  width: min(900px, 92vw);
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.hero,
+.add-event,
+.events {
+  background: #101818;
+  border: 1px solid #244;
+  border-radius: 18px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.today-card,
+.clock-card,
+.event-card {
+  background: #0b1111;
+  border: 1px solid #244;
+  border-radius: 14px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.label {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 1px solid #355;
+}
+
+input,
+select {
+  background: #050909;
+  color: #f4ffff;
+}
+
+button {
+  background: #00ffe0;
+  color: #001111;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.event-card h3 {
+  margin-bottom: 0.25rem;
+}
+
+.event-meta {
+  opacity: 0.8;
+}

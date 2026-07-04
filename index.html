@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evergreen Life</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <h1>Evergreen Life</h1>
+
+      <div class="today-card">
+        <p class="label">Today</p>
+        <h2 id="evergreenToday">Loading...</h2>
+        <p id="gregorianToday" class="hidden"></p>
+      </div>
+
+      <div class="clock-card">
+        <p class="label">Seximal Time</p>
+        <h2 id="seximalClock">--:--:--₆</h2>
+        <p id="standardClock" class="hidden"></p>
+      </div>
+
+      <button id="toggleCivilian">Show Gregorian / Standard Time</button>
+    </section>
+
+    <section class="add-event">
+      <h2>Add Deadline</h2>
+
+      <form id="eventForm">
+        <label>
+          Title
+          <input id="eventTitle" type="text" placeholder="APUSH essay due" required />
+        </label>
+
+        <label>
+          Gregorian Date
+          <input id="eventDate" type="date" required />
+        </label>
+
+        <label>
+          Time
+          <input id="eventTime" type="time" />
+        </label>
+
+        <label>
+          Domain
+          <select id="eventDomain">
+            <option>Mind</option>
+            <option>Body</option>
+            <option>Language</option>
+            <option>Music</option>
+            <option>Spirit</option>
+            <option>Money</option>
+            <option>Work</option>
+          </select>
+        </label>
+
+        <button type="submit">Add Event</button>
+      </form>
+    </section>
+
+    <section class="events">
+      <h2>Events</h2>
+      <div id="eventsList"></div>
+    </section>
+  </main>
+
+  <script src="newcal.js"></script>
+  <script src="seximal-time.js"></script>
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
